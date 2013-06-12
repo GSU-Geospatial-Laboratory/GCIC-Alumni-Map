@@ -1,0 +1,12 @@
+#map-container {
+  background: #eee;
+  position: absolute;
+  top: 0em; /* must match height of #site-header */
+  right: 0;
+  bottom: 0em;
+  left: 0;
+  z-index: 10;
+}
+#map {
+  height: 100%;
+}
