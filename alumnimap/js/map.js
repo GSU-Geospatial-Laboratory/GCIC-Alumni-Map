@@ -57,8 +57,11 @@ var nullStyle = {
 
 //Popup for each country
 function onEachCountry(feature, layer) {
-	var popupContent = feature.properties.iso_a3;
-	layer.bindPopup(popupContent);
+	var popupContent = "<div class='test'><strong>" + feature.properties.iso_a3;
+	//layer.bindPopup(popupContent);
+    layer.on('click', function(e){
+        console.log(e)
+    })
 }
 
 //On click of the country.  Right now just writes the iso_a3 property to the console
